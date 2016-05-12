@@ -27,7 +27,7 @@ Partial Class TemperatureConversion
         Me.btnConvert = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.txtTemp2 = New System.Windows.Forms.TextBox()
-        Me.cmbUnit2 = New System.Windows.Forms.ComboBox()
+        Me.txtUnit2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'cmbUnit1
@@ -72,29 +72,27 @@ Partial Class TemperatureConversion
         'txtTemp2
         '
         Me.txtTemp2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTemp2.Location = New System.Drawing.Point(178, 63)
+        Me.txtTemp2.Location = New System.Drawing.Point(185, 63)
         Me.txtTemp2.Name = "txtTemp2"
         Me.txtTemp2.ReadOnly = True
         Me.txtTemp2.Size = New System.Drawing.Size(108, 26)
         Me.txtTemp2.TabIndex = 8
         '
-        'cmbUnit2
+        'txtUnit2
         '
-        Me.cmbUnit2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbUnit2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbUnit2.FormattingEnabled = True
-        Me.cmbUnit2.Items.AddRange(New Object() {"C", "F"})
-        Me.cmbUnit2.Location = New System.Drawing.Point(292, 63)
-        Me.cmbUnit2.Name = "cmbUnit2"
-        Me.cmbUnit2.Size = New System.Drawing.Size(41, 28)
-        Me.cmbUnit2.TabIndex = 9
+        Me.txtUnit2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUnit2.Location = New System.Drawing.Point(299, 63)
+        Me.txtUnit2.Name = "txtUnit2"
+        Me.txtUnit2.ReadOnly = True
+        Me.txtUnit2.Size = New System.Drawing.Size(34, 26)
+        Me.txtUnit2.TabIndex = 9
         '
         'TemperatureConversion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(361, 185)
-        Me.Controls.Add(Me.cmbUnit2)
+        Me.Controls.Add(Me.txtUnit2)
         Me.Controls.Add(Me.txtTemp2)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnConvert)
@@ -111,6 +109,6 @@ Partial Class TemperatureConversion
     Friend WithEvents btnConvert As System.Windows.Forms.Button
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents txtTemp2 As System.Windows.Forms.TextBox
-    Friend WithEvents cmbUnit2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtUnit2 As System.Windows.Forms.TextBox
 
 End Class
